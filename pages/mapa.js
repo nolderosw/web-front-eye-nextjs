@@ -8,6 +8,9 @@ import Button from '@material-ui/core/Button'
 import Link from '../src/Link';
 import Copyright from '../src/Copyright';
 import { makeStyles } from '@material-ui/core/styles';
+import Tabela from "../src/Tabela";
+import Tabela02 from "../src/Tabela02";
+import Tabela03 from "../src/Tabela03";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,25 +37,55 @@ export default function Mapa() {
             <Button color="secundary" variant="contained" color="primary">
               <Typography color="secondary">
                 Entrar
-          </Typography>
+              </Typography>
             </Button>
           </Box>
         </Grid>
-        <Grid item xs={6}>
-          <Box my={4} align="center">
-            <Typography variant="h4" component="h2" gutterBottom>
-              Tabela com mapa REAL ficará aqui
-        </Typography>
-          </Box>
+        <Grid item xs={2}>
+          <strong>Piso 01 - Real</strong>
+          <br></br>
+          <br></br>
+          <Tabela>
+          </Tabela>
         </Grid>
-        <Grid item xs={6}>
-          <Box my={4} align="center">
-            <Typography variant="h4" component="h2" gutterBottom>
-              Tabela com mapa PARA O SISTEMA ficará aqui
-        </Typography>
-          </Box>
+        <Grid item xs={2}>
+          <strong>Piso 01 - Sistema</strong>
+          <br></br>
+          <br></br>
+          <Tabela>
+          </Tabela>
+        </Grid>
+        <Grid item xs={2}>
+          <strong>Piso 02 - Real</strong>
+          <br></br>
+          <br></br>
+          <Tabela02>
+          </Tabela02>
+        </Grid>
+        <Grid item xs={2}>
+          <strong>Piso 02 - Sistema</strong>
+          <br></br>
+          <br></br>
+          <Tabela02>
+          </Tabela02>
+        </Grid>
+        <Grid item xs={2}>
+          <strong>Piso 03 - Real</strong>
+          <br></br>
+          <br></br>
+          <Tabela03>
+          </Tabela03>
+        </Grid>
+        <Grid item xs={2}>
+          <strong>Piso 03 - Sistema</strong>
+          <br></br>
+          <br></br>
+          <Tabela03>
+          </Tabela03>
         </Grid>
       </Grid>
+      <br></br>
+      <br></br>
       <Link href="/"> Voltar para o início</Link>
       <Copyright />
     </Container>
