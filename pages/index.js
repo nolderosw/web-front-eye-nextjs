@@ -15,14 +15,6 @@ export default function Index() {
           </Typography>
         </Button>
       </Box>
-      {/*
-      <Box my={4}>
-        <Button color="primary" variant="contained" component={Link} naked href="/veiculo">
-          <Typography color="secondary">
-            Entrar com um veículo
-          </Typography>
-        </Button>
-      </Box> */} 
     </Container>
   );
 }
